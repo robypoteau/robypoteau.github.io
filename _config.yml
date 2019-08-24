@@ -23,7 +23,7 @@ github_username:  robypoteau
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-architect
+theme: minima #jekyll-theme-architect
 plugins:
   - jekyll-feed
 
