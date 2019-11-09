@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article>
+  <header class="mb2">
+    {% if page.link %}
+    <h1 class="mb0.5"><a href="{{page.link}}" target="_blank" class="underline">{{ page.title }}</a></h1>
+    {% else %}
+    <h1 class="mb0.5">{{ page.title }}</h1>
+    {% endif %}
+    <div class="h5 gray">
+      Written on {{ page.date | date: "%B %-d, %Y" }}
+    </div>
+  </header>
+  <div class="post">
+    {{ content }}
+  </div>
+
+  {% if page.changelog %}
+  <div class="bt b-light-gray">
+    <h4>Changelog</h4>
+    {% for entry in page.changelog %}
+    <div class="mb1">
+      <div class="h5 italic">{{entry.date}}</div>
+      <div>{{entry.summary}}</div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+</article>
