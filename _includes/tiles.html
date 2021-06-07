@@ -1,0 +1,10 @@
+<section id="one" class="tiles">
+  {% for tile in site.posts limit:site.tiles-count %}
+  <article style="background-image: url({{ tile.image }});">
+    <header class="major">
+      <h3>{{ tile.title }}</h3>
+      <p>{{ tile.content }}</p>
+    </header>
+  </article>
+  {% endfor %}
+</section>

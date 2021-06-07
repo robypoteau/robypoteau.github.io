@@ -1,7 +1,6 @@
-_site
-.sass-cache
-node_modules
-.DS_STORE
+_site/
+.sass-cache/
+.jekyll-metadata
+Gemfile.lock
+*.gem
 .jekyll-cache
-_includes/google-analytics.html
-vendor/

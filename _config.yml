@@ -1,19 +1,37 @@
-# Site settings
+# site settings
 title: RoboPoto
-description: People Developer
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://robopoto.com" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+# email: youremailaddress@gmail.com
+description: Consultant | Data Scientist | Software Developer
+baseurl: # the subpath of your site, e.g. /blog
+url: https://www.robopoto.com # the base hostname & protocol for your site
+# author: 
+# street_address: 1234 Somewhere Road
+# city: Nashville
+# state: TN
+# zip_code: 55555
+# country: United States of America
+# phone: (716) 555-5555
 
-# User settings
-username: Roby Poteau
-user_description: I have my doctorate in Operations Research so my skillset concerns taking data and making it useful. This has lead me to explore software development in more depth and become familiar with many of its tools. My desire is to share what I know and what I'm learning.
-user_title: Researcher | Developer
-email: robypoteau@gmail.com
-instagram_username: robesmagobes
-github_username:  robypoteau
+# homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 6
 
-# Google-analytics
-google-analytics:
-  id: ""
+socials:
+  GitHub: https://github.com/robypoteau
+  GitLab:
+  Instagram: https://www.instagram.com/robesmagobes
+  LinkedIn: https://www.linkedin.com/in/robypoteau
+  Slack:
 
-exclude: ['package.json', 'src' , 'node_modules']
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
+
+exclude:
+- "*.gemspec"
+- LICENSE.md
+- CONTRIBUTING.md
+- README.md 
+- makefile
